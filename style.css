@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    background: #2f323f;
+}
+
+/*Navegador*/
+.navegador
+{
+    position: fixed;
+    inset: 40px 0 40px 20px;
+    background: #1d1e25;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.navegador.open
+{
+    width: 250px;
+}
+.menu
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 23px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu h1
+{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    padding: 0 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.open .menu h1
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu::before
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+.open .menu::before
+{
+    transform: translateY(0px) rotate(45deg);
+}
+.menu::after
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    transform: translateY(8px);
+    box-shadow: 0 -8px 0 #333;
+    transition: 0.5s;
+}
+.open .menu::after
+{
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 #333;
+}
+.navegador ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.navegador ul li
+{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.navegador ul li.ativo
+{
+    transform: translateX(30px);
+}
+.navegador ul li a
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navegador ul li a .icone
+{
+    position: relative;
+    display: block;
+    min-width: 55px;
+    height: 55px;
+    line-height: 60px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-size: 1.75em;
+    color: #fff;
+}
+.navegador ul li a .icone::before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    filter: blur(8px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.navegador ul li.ativo a .icone
+{
+    color: #333;
+    background: var(--clr);
+}
+.navegador ul li.ativo a .icone::before
+{
+    opacity: 0.5;
+}
+
+.navegador ul li a .texto
+{
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.navegador.open ul li a .texto
+{
+    opacity: 1;
+    visibility: visible;
+}
+.navegador ul li.ativo a .texto
+{
+    color: var(--clr);
+}
+/*Navegador*/
+
+/*Carta Sobre Mim*/
+.conteiner1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 10%;
+}
+.conteiner1-2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.conteiner1-2 .carta .detalhes
+{
+    position: absolute;
+    bottom: -220px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+.carta
+{
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: #1d1e25;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+.carta .conteudo
+{
+    position: relative;
+    overflow: hidden;
+}
+.carta .conteudo::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #1d1e25 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.carta:hover .conteudo::before
+{
+    bottom: 0px;
+}
+.carta .conteudo img
+{
+    width: 120%;
+    transition: 0.5s;
+}
+.carta:hover .conteudo img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+.carta .detalhes
+{
+    position: absolute;
+    bottom: -265px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+.carta:hover .detalhes
+{
+    bottom: 40px;
+}
+.carta .detalhes .titulo
+{
+    max-width: 180px;
+    color: #EAEEFF;
+}
+.carta .detalhes .informacoes
+{
+    color: #fff;
+    margin-top: 10px;
+    
+}
+/*Carta Sobre Mim*/
+

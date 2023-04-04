@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="book-outline.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio do Lucas</title>
+</head>
+<body>
+    <div class="navegador">
+        <div class="menu">
+            <h1>Lucas Dickmann Schneider</h1>
+        </div>
+        <ul>
+            <li class="lista ativo" style="--clr:#fff;">
+                <a href="index.html">
+                    <span class="icone"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="texto">Início</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#A37BC2;">
+                <a href="matematica.html">
+                    <span class="icone"><ion-icon name="calculator-outline"></ion-icon></span>
+                    <span class="texto">Matemática</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#D74D30;">
+                <a href="ch.html">
+                    <span class="icone"><ion-icon name="earth-outline"></ion-icon></span>
+                    <span class="texto">Ciências Humanas</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#118B7C;">
+                <a href="cn.html">
+                    <span class="icone"><ion-icon name="accessibility-outline"></ion-icon></span>
+                    <span class="texto">Ciências da Natureza</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#017E90;">
+                <a href="linguagens.html">
+                    <span class="icone"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+                    <span class="texto">Linguagens</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#FF2972;">
+                <a href="ds.html">
+                    <span class="icone"><ion-icon name="code-working-outline"></ion-icon></span>
+                    <span class="texto">DS</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#A37BC2;">
+                <a href="matematica.html">
+                    <span class="icone"><ion-icon name="logo-youtube"></ion-icon></span>
+                    <span class="texto">Vídeo sobre mim</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="conteiner1">
+        <div class="carta">
+            <div class="conteudo">
+                <img src="FotoLucasAtivo.jpeg">
+            </div>
+            <div class="detalhes">
+                <h1 class="titulo">Sobre mim</h1>
+                <div class="informacoes">
+                    <p>Olá a todos os visitantes do meu Portfólio, me chamo Lucas Dickman Schneider,
+                        espero que todos estejam bem. Estou no meu ultimo ano do ensino médio do SENAI.
+                        Eu sou um aluno do DS, mais especificadamente da turma 303. Espero que encontre
+                        o que veio procurar.
+                    </p>
+                    <p>Quer me conhecer melhor, clique no botão do youtube ao lado e assista o vídeo!!!</p>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner1-2">
+            <div class="carta">
+                <div class="conteudo">
+                    <img src="TrofeuRedes.jpg">
+                </div>
+                <div class="detalhes">
+                    <h1 class="titulo">Minhas conquistas</h1>
+                    <div class="informacoes">
+                        <p>
+                            Bom, eu e minha equipe ficamos em primeiro no
+                            projeots de redes do Profº Marcio, fiquei em 3ºlugar
+                            com a minha equipe, aparecendo até no ver mais pelo 
+                            hackaton, tive menção honrosa pelo ccanguru e fui aluno
+                            exemplar do SENAI no ano de 2021.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script>
+    /*Navegador*/
+       const menu = document.querySelector('.menu'); 
+       const navegador = document.querySelector('.navegador');
+       menu.onclick = function(){
+        navegador.classList.toggle('open')
+       }
+
+       const lista = document.querySelectorAll('.lista');
+       function activeLink(){
+            lista.forEach((item) => item.classList.remove('ativo'));
+            this.classList.add('ativo');
+       }
+       lista.forEach((item) => item.addEventListener('click', activeLink))
+    /*Navegador*/
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
