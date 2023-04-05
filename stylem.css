@@ -184,3 +184,14 @@ body
     color: var(--clr);
 }
 /*Navegador*/
+
+/*Atividade*/
+.caixa
+{
+    background-color: #1d1e25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 10%;
+}
