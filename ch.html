@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="book-outline.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio do Lucas</title>
+</head>
+<body>
+    <div class="navegador">
+        <div class="menu">
+            <h1>Lucas Dickmann Schneider</h1>
+        </div>
+        <ul>
+            <li class="lista" style="--clr:#fff;">
+                <a href="index.html">
+                    <span class="icone"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="texto">Início</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#A37BC2;">
+                <a href="matematica.html">
+                    <span class="icone"><ion-icon name="calculator-outline"></ion-icon></span>
+                    <span class="texto">Matemática</span>
+                </a>
+            </li>
+            <li class="lista ativo" style="--clr:#D74D30;">
+                <a href="ch.html">
+                    <span class="icone"><ion-icon name="earth-outline"></ion-icon></span>
+                    <span class="texto">Ciências Humanas</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#118B7C;">
+                <a href="cn.html">
+                    <span class="icone"><ion-icon name="accessibility-outline"></ion-icon></span>
+                    <span class="texto">Ciências da Natureza</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#017E90;">
+                <a href="linguagens.html">
+                    <span class="icone"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+                    <span class="texto">Linguagens</span>
+                </a>
+            </li>
+            <li class="lista" style="--clr:#FF2972;">
+                <a href="ds.html">
+                    <span class="icone"><ion-icon name="code-working-outline"></ion-icon></span>
+                    <span class="texto">DS</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+       const menu = document.querySelector('.menu'); 
+       const navegador = document.querySelector('.navegador');
+       menu.onclick = function(){
+        navegador.classList.toggle('open')
+       }
+
+       const lista = document.querySelectorAll('.lista');
+       function activeLink(){
+            lista.forEach((item) => item.classList.remove('ativo'));
+            this.classList.add('ativo');
+       }
+       lista.forEach((item) => item.addEventListener('click', activeLink))
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
