@@ -138,7 +138,6 @@ body
     border-radius: 10px;
     font-size: 1.75em;
     color: #fff;
-    padding-top: 3%;
 }
 .navegador ul li a .icone::before
 {
@@ -152,7 +151,6 @@ body
     filter: blur(8px);
     opacity: 0;
     transition: 0.5s;
-    padding-top: 3%;
 }
 .navegador ul li.ativo a .icone
 {
