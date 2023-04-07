@@ -255,6 +255,11 @@ body
     max-width: 180px;
     color: #EAEEFF;
 }
+.carta .detalhes .titulo2
+{
+    max-width: 200px;
+    color: #EAEEFF;
+}
 .carta .detalhes .informacoes
 {
     color: #fff;
