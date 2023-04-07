@@ -188,28 +188,13 @@ body
 /*Carta Sobre Mim*/
 .conteiner1
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    grid-column-gap: 50px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding-left: 10%;
-}
-.conteiner1-2
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
-}
-.conteiner1-2 .carta .detalhes
-{
-    position: absolute;
-    bottom: -220px;
-    left: 0;
-    padding: 20px;
-    width: 100%;
-    z-index: 2;
-    transition: 0.5s;
 }
 .carta
 {
