@@ -216,22 +216,19 @@ body
 }
 .caixa .At1
 {
-    display: grid;
-    grid-template-columns: 20% 20%;
-    grid-column-gap: 20%;
+    position: relative;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding-left: 10%;
 }
-.At1 .imagem1,
-.At1 .imagem2
+.At1 .imagem
 {
     position: relative;
     overflow: hidden;
 }
-.At1 .imagem1 img,
-.At1 .imagem2 img
+.At1 .imagem img
 {
     width: 100%;
     border-radius: 20px;
