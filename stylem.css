@@ -220,6 +220,8 @@ body
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    width: 600px;
+    height: 400px;
     min-height: 100vh;
     padding-left: 10%;
 }
