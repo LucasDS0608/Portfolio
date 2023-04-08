@@ -214,7 +214,16 @@ body
     line-height: 150%;
     height: 100%;
 }
-.caixa .At1,
+.caixa .At1
+{
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    min-height: 105vh;
+}
 .caixa .At2,
 .caixa .At3
 {
@@ -224,7 +233,7 @@ body
     align-items: center;
     width: 600px;
     height: 400px;
-    min-height: 100vh;
+    min-height: 53vh;
 }
 .At1 .imagem,
 .At2 .imagem,
