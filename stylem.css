@@ -215,7 +215,8 @@ body
     height: 100%;
 }
 .caixa .At1,
-.caixa .At2
+.caixa .At2,
+.caixa .At3
 {
     position: relative;
     margin: 0 auto;
@@ -226,13 +227,15 @@ body
     min-height: 100vh;
 }
 .At1 .imagem,
-.At2 .imagem
+.At2 .imagem,
+.At3 .imagem
 {
     position: relative;
     overflow: hidden;
 }
 .At1 .imagem img,
-.At2 .imagem img
+.At2 .imagem img,
+.At3 .imagem img
 {
     width: 100%;
     border-radius: 20px;
