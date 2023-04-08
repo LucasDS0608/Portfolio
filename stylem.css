@@ -214,7 +214,8 @@ body
     line-height: 150%;
     height: 100%;
 }
-.caixa .At1
+.caixa .At1,
+.caixa .At2
 {
     position: relative;
     margin: 0 auto;
@@ -224,12 +225,14 @@ body
     height: 400px;
     min-height: 100vh;
 }
-.At1 .imagem
+.At1 .imagem,
+.At2 .imagem
 {
     position: relative;
     overflow: hidden;
 }
-.At1 .imagem img
+.At1 .imagem img,
+.At2 .imagem img
 {
     width: 100%;
     border-radius: 20px;
