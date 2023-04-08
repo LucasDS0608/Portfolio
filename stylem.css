@@ -218,11 +218,14 @@ body
 {
     position: relative;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-column-gap: 20%;
     justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 400px;
-    min-height: 105vh;
+    align-items: self-end;
+    width: 757px;
+    height: 412px;
+    min-height: 209vh;
 }
 .caixa .At2,
 .caixa .At3
@@ -249,3 +252,4 @@ body
     width: 100%;
     border-radius: 20px;
 }
+
