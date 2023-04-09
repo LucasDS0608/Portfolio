@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    background: #2f323f;
+}
+
+/*Navegador*/
+.navegador
+{
+    position: fixed;
+    inset: 40px 0 40px 20px;
+    background: #1d1e25;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.navegador.open
+{
+    width: 250px;
+}
+.menu
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 23px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu h1
+{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    padding: 0 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.open .menu h1
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu::before
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+.open .menu::before
+{
+    transform: translateY(0px) rotate(45deg);
+}
+.menu::after
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    transform: translateY(8px);
+    box-shadow: 0 -8px 0 #333;
+    transition: 0.5s;
+}
+.open .menu::after
+{
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 #333;
+}
+.navegador ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.navegador ul li
+{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.navegador ul li.ativo
+{
+    transform: translateX(30px);
+}
+.navegador ul li a
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navegador ul li a .icone
+{
+    position: relative;
+    display: block;
+    min-width: 55px;
+    height: 55px;
+    line-height: 60px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-size: 1.75em;
+    color: #fff;
+}
+.navegador ul li a .icone::before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr);
+    filter: blur(8px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.navegador ul li.ativo a .icone
+{
+    color: #333;
+    background: var(--clr);
+}
+.navegador ul li.ativo a .icone::before
+{
+    opacity: 0.5;
+}
+
+.navegador ul li a .texto
+{
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.navegador.open ul li a .texto
+{
+    opacity: 1;
+    visibility: visible;
+}
+.navegador ul li.ativo a .texto
+{
+    color: var(--clr);
+}
+/*Navegador*/
+
+/*Atividade*/
+.caixa
+{
+    background-color: #2f323f;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 10%;
+}
+.caixa .titulo
+{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+.caixa .nomeAt
+{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: pre-line;
+    line-height: 150%;
+    height: 100%;
+}
+.caixa .At1,
+.caixa .At2
+{
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 400px;
+    min-height: 53vh;
+}
+.At1 .imagem,
+.At2 iframe
+{
+    position: relative;
+    overflow: hidden;
+}
+.At1 .imagem img,
+.At2 iframe
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
