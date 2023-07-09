@@ -225,7 +225,7 @@ body
     align-items: self-end;
     width: 757px;
     height: 412px;
-    min-height: 237vh;
+    min-height: 349vh;
 }
 .caixa .At1,
 .caixa .At3,
@@ -237,10 +237,11 @@ body
     align-items: center;
     width: 600px;
     height: 400px;
-    min-height: 73vh;
+    min-height: 136vh;
 }
 .At1 .imagem,
 .At2 .imagem,
+.At2 iframe,
 .At3 .imagem,
 .At4 .imagem
 {
@@ -249,6 +250,7 @@ body
 }
 .At1 .imagem img,
 .At2 .imagem img,
+.At2 iframe,
 .At3 .imagem img,
 .At4 .imagem img
 {
