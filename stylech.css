@@ -216,9 +216,28 @@ body
 .caixa .At1,
 .caixa .At2,
 .caixa .At3,
-.caixa .At4,
+.caixa .At4
+{
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    min-height: 121vh;
+}
+
 .caixa .At5,
-.caixa .At6,
+.caixa .At6
+{
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    min-height: 444vh;
+}
 .caixa .At7,
 .caixa .At8
 {
@@ -228,7 +247,7 @@ body
     align-items: center;
     width: 600px;
     height: 400px;
-    min-height: 121vh;
+    min-height: 444vh;
 }
 .At1 .imagem,
 .At4 .imagem,
