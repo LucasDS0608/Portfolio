@@ -236,7 +236,7 @@ body
     align-items: center;
     width: 600px;
     height: 400px;
-    min-height: 444vh;
+    min-height: 1104vh;
 }
 .caixa .At7,
 .caixa .At8
@@ -247,7 +247,7 @@ body
     align-items: center;
     width: 600px;
     height: 400px;
-    min-height: 444vh;
+    min-height: 80vh;
 }
 .At1 .imagem,
 .At4 .imagem,
