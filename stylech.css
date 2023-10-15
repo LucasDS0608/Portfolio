@@ -216,7 +216,11 @@ body
 .caixa .At1,
 .caixa .At2,
 .caixa .At3,
-.caixa .At4
+.caixa .At4,
+.caixa .At5,
+.caixa .At6,
+.caixa .At7,
+.caixa .At8
 {
     position: relative;
     margin: 0 auto;
@@ -227,13 +231,19 @@ body
     min-height: 121vh;
 }
 .At1 .imagem,
-.At4 .imagem
+.At4 .imagem,
+.At5 .imagem,
+.At6 .imagem,
+.At8 .imagem
 {
     position: relative;
     overflow: hidden;
 }
 .At1 .imagem img,
-.At4 .imagem img
+.At4 .imagem img,
+.At5 .imagem img,
+.At6 .imagem img,
+.At8 .imagem img
 {
     width: 100%;
     border-radius: 20px;
